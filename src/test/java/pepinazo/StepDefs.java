@@ -22,15 +22,15 @@ public class StepDefs {
 
 	@Before
 	public void setUpTest() {
-		ChromeOptions opt = new ChromeOptions();
+	/*	ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);*/
 	}
 
 	@After
 	public void tearDownTest() {
-		driver.quit();
+		//driver.quit();
 	}
 
 	@Given("I have open the browser")
