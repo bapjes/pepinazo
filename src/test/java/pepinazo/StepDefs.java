@@ -35,7 +35,7 @@ public class StepDefs {
 
 	@Given("I have open the browser")
 	public void I_have_open_the_browser() {
-		assertNotNull(driver);
+		assertNotNull("El navegador no arranca",driver);
 	}
 
 	@When("I open Facebook website")

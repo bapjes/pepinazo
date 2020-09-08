@@ -1,6 +1,7 @@
 package IMDB;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +19,10 @@ public class Browser {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-
+    public Browser(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, 30);
+    }
 
     public void openBrowser() {
 
@@ -38,7 +42,7 @@ public class Browser {
 
     protected void goToPage(String url)
     {
-        openBrowser();
+        //openBrowser();
         driver.get(url);
     }
 
